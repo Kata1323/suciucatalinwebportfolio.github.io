@@ -102,6 +102,7 @@ body{
 }
 
 .aboutMeSection p{
+    font-size: 14px;
     padding: 0px 10px;
     text-indent: 10px;
 }
@@ -140,6 +141,7 @@ body{
 }
 
 .mySkillsSection p{
+    font-size: 14px;
     text-align: center;
     color: #4392F1 ;
     font-weight: 800;
@@ -161,10 +163,11 @@ body{
     border-bottom-left-radius: 10px;
 }
 
-.frontEnd {width: 40%;background-color:#29335C} 
+.frontEnd {width: 50%;background-color:#29335C} 
 .react {width: 30%; background-color: #29335C;}
 .backEnd {width: 40%; background-color: #29335C;}  
-.phpFramework {width: 40%; background-color: #29335C;} 
+.phpFramework {width: 40%; background-color: #29335C;}
+.CMS {width: 60%; background-color: #29335C;}
 .webDesign {width: 50%; background-color: #29335C;} 
 
 
@@ -178,6 +181,7 @@ body{
 }
 
 .contactMe > p{
+    font-size: 14px;
     text-decoration: underline solid 2px #4392F1;
     text-underline-offset: 5px;
 }
@@ -206,7 +210,12 @@ body{
 }
 
 #firstProjectDescription{
+    font-size: 14px;
     text-indent: 10px;
+}
+
+.projectPar{
+    font-size: 14px;
 }
 
 #seeProject{
