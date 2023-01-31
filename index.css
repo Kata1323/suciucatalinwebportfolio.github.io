@@ -3,68 +3,65 @@
 }
 
 body{
-    font-family: 'Montserrat';
+    background-color: #010203;
     margin: 0;
     min-height: 100vh;
+    font-family: 'Montserrat';
 }
 
 .header{
-    display: none;
-}
-
-.navBar{
-    display: block;
-    background-color: #4392F1 ;
-    width: 100%;
-    height: 70px;
-    padding: 10px 0;
-}
-
-.navBarElements{
-    display: block;
-    margin: 0 auto;
-    width: fit-content;
-}
-
-.navBarElements a{
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    font-size: 14px;
-    padding: 0 5px;
-}
-
-.navBarElements a:hover{
-    color: #FFC482   ;
-}
-
-.mainContent{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 60px;
-}
-
-.profile_aboutMe{
+    background: rgba(255, 255, 255, 0.20);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.9px);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    height: 40px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
-#profilePic{
-    width: 150px;
-    height: 150px;
-    filter:drop-shadow(8px 8px 4px #FFC482 );
+#logo{
+    padding-left: 5px;
 }
 
-.firstHellos{
-    padding: 0px 5px;
-    margin-top: 30px;
+#logo p{
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #8A4FFF;
+    font-family: 'Permanent Marker';
+    -webkit-text-stroke: 0.1px white;
+    text-shadow: 1px 1px 0px #c4a7ff;
 }
 
-.firstHellos p:nth-child(1){
-    font-size: 20px;
+.links{
+    width: 265px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.links a{
+    color: #fff;
+    text-decoration: none;
+    opacity: 70%;
+    font-size: 10px;
+}
+
+.links a:hover{
+    cursor: pointer;
+    opacity: 100%;
+}
+
+.title{
+    margin-top: 40px;
+}
+
+.webWord{
     text-align: center;
+    -ms-transform: skewY(20deg); 
+    transform: skewY(20deg);
     animation: fadeIn 5s;
     -webkit-animation: fadeIn 5s;
     -moz-animation: fadeIn 5s;
@@ -72,9 +69,21 @@ body{
     -ms-animation: fadeIn 5s;
 }
 
-.firstHellos p:nth-child(2){
-    font-size: 25px;
+.webWord span{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+    text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.9);
+}
+
+.webWord span:not(:first-child){
+   margin-left: -0.27em;
+}
+
+.developerWord{
     text-align: center;
+    -ms-transform: skewY(350deg); 
+    transform: skewY(350deg);
     animation: fadeIn 10s;
     -webkit-animation: fadeIn 10s;
     -moz-animation: fadeIn 10s;
@@ -82,39 +91,51 @@ body{
     -ms-animation: fadeIn 10s;
 }
 
-@keyframes fadeIn {
+.developerWord span{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+    text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.9);
+
+}
+
+.developerWord span:not(:first-child){
+    margin-left: -0.27em;
+ }
+
+ @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
 
-#myName{
-    color: #FFC482;
-    text-shadow: 1px 1px 2px #000;
+.aboutMe{
+    margin: 70px 20px 0px 20px ;
 }
 
-.aboutMeSection{
-    margin: 30px 10px;
+.aboutMe h2{
+    color: #fff;
+    font-size: 20px;
+    opacity: 90%;
+    padding: 0px 0px 5px 15px;
+    border-bottom: 1px solid #ffffff9c;
 }
 
-.aboutMeSection h2{
-    text-align: center;
-    color: #FFC482;
-}
-
-.aboutMeSection p{
+.aboutMe p{
+    color: #fff;
+    opacity: 90%;
     font-size: 14px;
-    padding: 0px 10px;
     text-indent: 10px;
+    padding: 0px 10px;
 }
 
 #stepItWord{
     text-decoration: underline solid 2px;
     font-weight:800;
-    color: #4392F1;
+    color: #8A4FFF;
 }
 
 #stepItWord:hover{
-    color: #FFC482;
+    color: yellow;
 }
 
 #secondPar{
@@ -125,539 +146,381 @@ body{
     padding-left: 10px;
 }
 
-.allSections{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.mySkills{
+    margin: 60px 20px 0px 20px ;
 }
 
-.mySkillsSection{
-    margin-top: 30px;
+.mySkills h2{
+    color: #fff;
+    font-size: 20px;
+    opacity: 90%;
+    padding: 0px 0px 5px 15px;
+    border-bottom: 1px solid #ffffff9c;
 }
 
-.mySkillsSection h2{
+
+.frontWord{
     text-align: center;
-    color: #FFC482;
+    padding-top: 10px;
 }
 
-.mySkillsSection p{
-    font-size: 14px;
-    text-align: center;
-    color: #4392F1 ;
+.frontWord span{
+    color: #fff;
+    font-size: 25px;
     font-weight: 800;
+    text-shadow:  1px 2px 1px #8A4FFF;
 }
 
-.container{
-    width: 80%; 
-    background-color: #ddd;
-    border-radius: 10px; 
-    margin: 0 auto;
-}
-
-.skills {
-    text-align: right; 
-    padding-top: 10px; 
-    padding-bottom: 10px; 
-    color: white; 
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-.frontEnd {width: 50%;background-color:#29335C} 
-.react {width: 30%; background-color: #29335C;}
-.backEnd {width: 40%; background-color: #29335C;}  
-.phpFramework {width: 40%; background-color: #29335C;}
-.CMS {width: 60%; background-color: #29335C;}
-.webDesign {width: 50%; background-color: #29335C;} 
-
-
-.contactMe{
-    margin-top: 50px;
-}
-
-.contactMe h2{
+.allFront{
     text-align: center;
-    color: #FFC482;
 }
 
-.contactMe > p{
-    font-size: 14px;
-    text-decoration: underline solid 2px #4392F1;
-    text-underline-offset: 5px;
+.allFront p{
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
 }
 
-#phoneNumber{
-    font-weight: bolder;
+.backEnd{
+    margin-top: 20px;
 }
 
-#emailAddress{
-    font-weight: bolder;
+.backWord{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.backWord span{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 800;
+    text-shadow:  1px 2px 1px #8A4FFF;
+}
+
+.allBack{
+    text-align: center;
+}
+
+.allBack p{
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.cms{
+    margin-top: 20px;
+}
+
+.cmsWord{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.cms span{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 800;
+    text-shadow:  1px 2px 1px #8A4FFF;
+}
+
+.cms p{
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
 }
 
 .myWork{
-    margin: 30px 10px;
-    padding: 0px 10px 0px 10px;
+    margin: 60px 20px 0px 20px;
 }
 
 .myWork h2{
-    text-align: center;
-    color: #FFC482;
+    color: #fff;
+    font-size: 20px;
+    opacity: 90%;
+    padding: 0px 0px 5px 15px;
+    border-bottom: 1px solid #ffffff9c;
+}
+
+.myWork p{
+    color: #fff;
+    font-size: 14px;
+    padding: 0px 10px;
 }
 
 #firstProjectTitle{
     text-align: center;
     font-size: 20px;
+    text-shadow: 0px 0px 6px yellow;
 }
 
-#firstProjectDescription{
-    font-size: 14px;
+#projectDescription{
     text-indent: 10px;
 }
 
-.projectPar{
-    font-size: 14px;
-}
-
 #seeProject{
-    color:#4392F1;
-    font-size: 14px;
+    color:#8A4FFF;
     font-weight: 800;
-}
-
-#seeProject:hover{
-    color:#FFC482;
 }
 
 #seeCode{
-    color:#4392F1;
-    font-size: 14px;
+    color:#8A4FFF;
     font-weight: 800;
 }
 
-#seeCode:hover{
-    color:#FFC482;
+.contactMe{
+    margin: 60px 20px 20px 20px;
+}
+
+.contactMe h2{
+    color: #fff;
+    font-size: 20px;
+    opacity: 90%;
+    padding: 0px 0px 5px 15px;
+    border-bottom: 1px solid #ffffff9c;
+}
+
+.phoneNumb{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.phoneNumb img{
+    width: 25px;
+    height: 25px;
+}
+
+.phoneNumb p{
+    color: #fff;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+
+.emailAdd{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.emailAdd img{
+    width: 25px;
+    height: 25px;
+}
+
+.emailAdd p{
+    color: #fff;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+
+.linkedIn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.linkedIn img{
+    width: 25px;
+    height: 25px;
+}
+
+.linkedIn a{
+    color: #fff;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    transition: 2s ease;
+}
+
+.linkedIn a:hover{
+    color: yellow;
 }
 
 #goToTopBtn{
-    padding: 5px;
-    background-color: #4392F1;
+    display: block;
+    margin: 20px auto;
+    font-size: 15px;
     color: #fff;
-    border: 1px solid #FFC482;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    cursor: pointer;
+    background-color: #8A4FFF;
+    border: 1px solid #c4a7ff;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 30px auto;
+    padding:5px 10px 5px 10px;
+    cursor: pointer; 
 }
 
-    @media only screen and (min-width: 481px) and (max-width: 768px) {
-        .navBarElements a{
-            color: #fff;
-            font-size: 18px;
-            padding: 0 20px;
-        }
+@media screen and (min-width: 1201px){
+    .header{
+        display: none;
+    }
 
-        #profilePic{
-            width: 200px;
-            height: 200px;
-        }
-
-        .firstHellos p:nth-child(1){
-            font-size: 30px;
-        }
-
-        .firstHellos p:nth-child(2){
+    #logo{
+        padding-left: 25px;
+    }
+    
+    #logo p{
         font-size: 35px;
-        }
-
-        .aboutMeSection h2{
-            font-size: 34px;
-        }
-
-        .aboutMeSection p{
-            font-size: 20px;
-        }
-
-        .mySkillsSection{
-            width: 600px;
-            margin-top: 30px;
-        }
-
-        .mySkillsSection h2{
-            font-size: 34px;
-        }
-
-        .mySkillsSection p{
-            font-size: 20px;
-        }
-
-        .container {
-            width: 100%; 
-        }
-
-        .contactMe h2{
-            font-size: 34px ;
-        }
-
-        .contactMe > p{
-            display: inline-block;
-            font-size: 18px;
-            padding: 0px 20px ;
-        }
-
-        .myWork h2{
-            font-size: 34px;
-        }
-        
-        #firstProjectTitle{
-            font-size: 25px;
-        }
-
-        #firstProjectDescription{
-            font-size: 20px;
-        }
-
-        .projectPar{
-            font-size: 20px;
-            text-align: center;
-        }
-        
-        #seeProject{
-            font-size: 20px;
-        }
-
-        #seeCode{
-            font-size: 20px;
-        }
-
-        #goToTopBtn{
-            padding: 10px 15px 10px 15px;
-            font-size: 16px;
-        }
-
     }
 
-    @media screen and (min-width:769px) and (max-width:1023px){
-
-        .navbar{
-            display: none ;
-        }
-
-        .navBar{
-            padding: 5px 0;
-        }
-
-        .navBarElements a{
-            font-size: 20px;
-            padding: 0 20px;
-        }
-
-        #profilePic{
-            width: 250px;
-            height: 250px;
-        }
-
-        .firstHellos p:nth-child(1){
-            font-size: 40px;
-        }
-    
-        .firstHellos p:nth-child(2){
-           font-size: 45px;
-        }
-
-        .aboutMeSection h2{
-            font-size: 44px;
-        }
-
-        .aboutMeSection p{
-            font-size: 25px;
-        }
-        
-        .mySkillsSection{
-            width: 800px;
-            margin-top: 30px;
-        }
-
-        .mySkillsSection h2{
-            font-size: 44px;
-        }
-    
-        .mySkillsSection p{
-            font-size: 25px;
-        }
-    
-        .contactMe h2{
-            font-size: 44px ;
-        }
-
-        .contactMe > p{
-            display: inline-block;
-            padding: 0px 15px ;
-            font-size: 20px;
-        }
-
-        .myWork h2{
-            font-size: 44px;
-        }
-        
-        #firstProjectTitle{
-            font-size: 30px;
-        }
-    
-        #firstProjectDescription{
-            font-size: 25px;
-        }
-
-        .projectPar{
-            font-size: 25px;
-            text-align: center;
-        }
-
-        #seeProject{
-            font-size: 25px;
-        }
-    
-        #seeCode{
-            font-size: 25px;
-        }
-    
-        #goToTopBtn{
-            padding: 15px 20px 15px 20px;
-            font-size: 22px;
-        }
+    .links{
+        width: 50%;
     }
 
-    @media screen and (min-width:1024px) and (max-width:1200px) {
-        .header{
-            display: block;
-            height: 150px;
-            background-color: #FFC482;
-            padding: 35px 0;
-        }
-
-        .header p {
-            font-size: 60px;
-            font-weight: 800;
-            color: #fff;
-            letter-spacing: 15px;
-            margin: 0 auto;
-            width: fit-content;
-            text-shadow: 3px 3px 5px #000;
-        }
-
-        .navBar{
-            height: 80px;
-            padding: 5px 0;
-        }
-        
-        .navBarElements a{
-            font-size: 25px;
-            padding: 0 20px;
-        }
-
-        #profilePic{
-            width: 300px;
-            height: 300px;
-        }
-
-        .firstHellos p:nth-child(1){
-            font-size: 50px;
-            
-        }
-    
-        .firstHellos p:nth-child(2){
-           font-size: 55px;
-        }
-
-        
-        .aboutMeSection h2{
-           font-size: 54px;
-        }
-        
-        .aboutMeSection p{
-            font-size: 30px;
-        }
-
-        .mySkillsSection{
-            width: 1000px;
-            margin-top: 30px;
-        }
-
-        .mySkillsSection h2{
-            font-size: 54px;
-        }
-
-        .mySkillsSection p{
-            font-size: 30px;
-        }
-
-        .skills{
-            font-size: 20px;
-        }
-
-        .contactMe h2{
-            font-size: 54px ;
-        }
-
-        .contactMe > p{
-            display: inline-block;
-            padding: 0px 15px ;
-            font-size: 25px;
-        }
-
-        .myWork h2{
-            font-size: 54px;
-        }
-        
-        #firstProjectTitle{
-            font-size: 40px;
-        }
-    
-        #firstProjectDescription{
-            font-size: 30px;
-        }
-
-        .projectPar{
-            font-size: 30px;
-            text-align: center;
-        }
-
-        #seeProject{
-            font-size: 30px;
-        }
-    
-        #seeCode{
-            font-size: 30px;
-        }
-    
-        #goToTopBtn{
-            padding: 15px 20px 15px 20px;
-            font-size: 28px;
-        }
+    .links a{
+        font-size: 16px;
     }
 
-    @media screen and (min-width: 1201px){
-
-        .header{
-            display: block;
-            height: 200px;
-            background-color: #FFC482;
-            padding: 60px 0;
-        }
-
-        .header p {
-            font-size: 60px;
-            font-weight: 800;
-            color: #fff;
-            letter-spacing: 15px;
-            margin: 0 auto;
-            width: fit-content;
-            text-shadow: 3px 3px 5px #000;
-        }
-
-        .navBar{
-            display: none;
-        }
-
-        .mainContent{
-            display:flex;
-            flex-direction: row;
-            align-items: stretch;
-            margin: 0;
-        }
-
-        .profile_aboutMe{
-            background-color: #bababa ;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            flex: 30%;
-            padding-top: 40px;
-        }
-
-        #profilePic{
-            width: 200px;
-            height: 200px;
-        }
-        
-        .firstHellos p:nth-child(1){
-            font-size: 25px;
-        }
-        
-        .firstHellos p:nth-child(2){
-            font-size: 30px;
-        }
-
-        .aboutMeSection h2{
-            font-size: 28px;
-            text-shadow: 2px 2px 0px #000;
-        }
-        
-        .aboutMeSection p{
-            font-size: 20px;
-            line-height: 30px;
-        }
-
-        .allSections{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            flex: 70%;
-            padding-top: 40px;
-        }
-
-        .mySkillsSection{
-           width: 800px;
-            margin-top: 20px;
-        }
-        
-        .mySkillsSection h2{
-            font-size: 28px;
-        }
-        
-        .mySkillsSection p{
-            font-size: 20px;
-        }
-        
-        .container {
-            width: 100%; 
-        }
-            
-        .contactMe h2{
-            font-size: 28px;
-        }
-            
-        .contactMe > p{
-            display: inline-block;
-            padding: 0px 15px ;
-            font-size: 20px;
-        }
-
-        .myWork h2{
-            font-size: 28px;
-        }
-        
-        #firstProjectTitle{
-            font-size: 25px;
-        }
-
-        #firstProjectDescription{
-            font-size: 20px;
-        }
-
-        .projectPar{
-            font-size: 20px;
-            text-align: center;
-            padding: 0px 80px;
-        }
-
-        #seeProject{   
-            font-size: 20px;
-        }
-        
-        #seeCode{
-            font-size: 20px;
-        }
-
-        #goToTopBtn{
-            display: none;
-        }
+    .title{
+        margin-top: 80px;
     }
+
+    .webWord{
+        background-color: #8A4FFF
+    }
+
+    .webWord span{
+        font-size: 100px;
+    }
+
+    .developerWord{
+        margin-top: 25px;
+        background-color: #8A4FFF;
+    }
+
+    .developerWord span{
+        font-size: 100px;
+    }
+
+    .mainContent{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        margin: 130px 20px 0px 20px;
+        padding-top: 60px;
+    }
+
+    .aboutMe{
+        margin: 20px;
+    }
+
+    .aboutMe h2{
+        font-size: 30px;
+        text-align: center;
+        padding: 0px 0px 5px 0px;
+    }
+    
+    .aboutMe p{
+        font-size: 18px;
+    }
+    
+    .mySkills{
+        margin: 20px;
+        width: 240px;
+    }
+    
+    .mySkills h2{
+        font-size: 30px;
+        text-align: center;
+        padding: 0px 0px 5px 0px;
+    }
+
+    .frontWord span{
+        font-size: 35px;
+    }
+
+    .allFront p{
+        font-size: 20px;
+    }
+    
+    
+    .backWord span{
+        font-size: 35px;
+    }
+    
+    .allBack p{
+        font-size: 20px;
+    }
+    
+    .cms span{
+        font-size: 35px;
+    }
+    
+    .cms p{
+        font-size: 20px;
+    }
+
+    .myWork{
+        margin: 20px;
+        width: 445px;
+    }
+    
+    .myWork h2{
+        font-size: 30px;
+        text-align: center;
+        padding: 0px 0px 5px 0px;
+    }
+    
+    .myWork p{
+        font-size: 18px;
+    }
+    
+    #firstProjectTitle{
+        font-size: 25px;
+    }
+
+    .contactMe{
+        margin: 20px;
+    }
+    
+    .contactMe h2{
+        font-size: 30px;
+        text-align: center;
+        padding: 0px 0px 5px 0px;
+    }
+    
+    .phoneNumb img{
+        width: 30px;
+        height: 30px;
+        filter: drop-shadow(0px 0px 3px #c4a7ff);
+    }
+    
+    .phoneNumb p{
+        font-size: 18px ;
+    }
+    
+    .emailAdd{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 10px;
+    }
+    
+    .emailAdd img{
+        width: 30px;
+        height: 30px;
+        filter: drop-shadow(0px 0px 3px #c4a7ff);
+    }
+    
+    .emailAdd p{
+        font-size: 18px ;
+    }
+    
+    .linkedIn img{
+        width: 30px;
+        height: 30px;
+        filter: drop-shadow(0px 0px 3px #c4a7ff);
+    }
+    
+    .linkedIn a{
+        font-size: 18px ;
+    }
+
+    #goToTopBtn{
+        display: none;
+    }
+
+}
