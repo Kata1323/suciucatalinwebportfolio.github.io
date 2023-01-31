@@ -4,114 +4,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Portfolio</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <title>Document</title>
 </head>
-
 <body>
-
     <div class="header">
-        <p>Web Developer</p>
-    </div>
+        <div id="logo">
+            <p>SC</p>
+        </div>
 
-    <div class="navBar">
-        <div class="navBarElements">
-            <a href="#anchor_point_aboutMe" ><p>About Me</p></a>
-            <a href="#anchor_point_mySkills"><p>My Skills</p></a>
-            <a href="#anchor_point_contactMe"><p>Contact Me</p></a>
-            <a href="#anchor_point_contactMe"><p>My Work</p></a>
+        <div class="links">
+            <a href="#anchor_point_aboutMe">About Me</a>
+            <a href="#anchor_point_mySkills">My Skills</a>
+            <a href="#anchor_point_myWork">My Work</a>
+            <a href="#anchor_point_contactMe">Contact Me</a>
+        </div>
+    </div>
+    
+    
+    <div class="title">
+        <div class="webWord">
+            <span>W</span>
+            <span>E</span>
+            <span>B</span>
+        </div>
+
+        <div class="developerWord">
+            <span>D</span>
+            <span>E</span>
+            <span>V</span>
+            <span>E</span>
+            <span>L</span>
+            <span>O</span>
+            <span>P</span>
+            <span>E</span>
+            <span>R</span>
         </div>
     </div>
 
     <div class="mainContent">
-        <div class="profile_aboutMe">
-            <div class="profilePhoto">
-                <img src="boy.png" id="profilePic">
+        <a id="anchor_point_aboutMe">
+            <div class="aboutMe">
+                <h2>About Me</h2>
+                <p> My name is Suciu Catalin and I am 21 years old. I am passionate about Web Development, which is why I decided to take the course
+                    with those at <a href="https://bucharest.itstep.org/"><span id="stepItWord">StepIt Academy</span></a>. <br> 
+                    <span id="secondPar"> I am a serious and organized person, qualities that I am sure will help me in this
+                    field. I communicate well with the people around me and integrate well and quickly into a new team, teamwork being 
+                    another quality I have.</span> <br> 
+                    <span id="thirdPar"> I want to learn as many new things as possible and develop my Web Development skills
+                    as much as possible.</span>
+                </p>
             </div>
+        </a>
 
-            <div class="firstHellos">
-                <p>Hello there!</p>
-                <p>My name is <span id="myName">Catalin Suciu</span></p>
+        <a id="anchor_point_mySkills" >
+            <div class="mySkills">
+                <h2>My Skills</h2>
+
+                <div class="frontEnd">
+                    <div class="frontWord">
+                        <span>F</span>
+                        <span>R</span>
+                        <span>O</span>
+                        <span>N</span>
+                        <span>T</span>
+                        <span>E</span>
+                        <span>N</span>
+                        <span>D</span>
+                    </div>
+
+                    <div class="allFront">
+                        <p>(HTML5, CSS3, JavaScript, React)</p>
+                    </div>
+                </div>
+
+                <div class="backEnd">
+                    <div class="backWord">
+                        <span>B</span>
+                        <span>A</span>
+                        <span>C</span>
+                        <span>K</span>
+                        <span>E</span>
+                        <span>N</span>
+                        <span>D</span>
+                    </div>
+
+                    <div class="allBack">
+                        <p>(PHP, MySQL, Laravel)</p>
+                    </div>
+                </div>
+
+                <div class="cms">
+                    <div class="cmsWord">
+                        <span>C</span>
+                        <span>M</span>
+                        <span>S</span>
+                    </div>
+
+                   <p>(WordPress)</p>
+                </div>
+
             </div>
+        </a>
 
-                <a id="anchor_point_aboutMe">
-                    <div class="aboutMeSection">
-                        <h2>About Me</h2>
-                        <p> My name is Suciu Catalin and I am 20 years old. I am passionate about Web Development, which is why I decided to take the course
-                            with those at <a href="https://bucharest.itstep.org/"><span id="stepItWord">StepIt Academy</span></a>. <br> 
-                            <span id="secondPar"> I am a serious and organized person, qualities that I am sure will help me in this
-                            field. I communicate well with the people around me and integrate well and quickly into a new team, teamwork being 
-                            another quality I have.</span> <br> 
-                            <span id="thirdPar"> I want to learn as many new things as possible and develop my Web Development skills
-                            as much as possible.</span>
-                        </p>
-                    </div>
-                </a>
-        </div>
+        <a id="anchor_point_myWork">
+            <div class="myWork">
+                <h2>My Work</h2>
 
-        <div class="allSections">
-                <a id="anchor_point_mySkills">
-                    <div class="mySkillsSection">
-                        <h2>My Skills</h2>
+                <p id="firstProjectTitle">My first Project</p>
+                <p id="projectDescription">This project was made by using HTML5, CSS3, a bit of Jquery and most important, PHP.
+                    For PHP, I used OOP principles in order to work with different product types.
+                    The project presents products listing with 'add products' and 'delete products' features.
+                </p>
+                <p class="projectPar">You can see my project here: <br> <span><a id="seeProject" href="https://web-junior-test.000webhostapp.com/">https://web-junior-test.000webhostapp.com/</a></span></p>
+                <p class="projectPar">Also, you can see this project's code here: <span><a id="seeCode" href="https://bitbucket.org/cata13/webtest/src/master/">https://bitbucket.org/cata13/webtest/src/master/</a></span></p>
+            </div>
+        </a>
 
-                        <p>Front-End Dev. Skills (HTML, CSS, Javascript)</p>
-                        <div class="container">
-                            <div class="skills frontEnd">50%</div>
-                        </div>
+        <a id="anchor_point_contactMe">
+            <div class="contactMe">
+                <h2>Contact Me</h2>
 
-                        <p>Front-End JavaScript library(React)</p>
-                        <div class="container">
-                            <div class="skills react">30%</div>
-                        </div>
+                <div class="phoneNumb">
+                    <img src="photos/phone-call(1).png" alt="Phone Number">
+                    <p>+40733524819</p>
+                </div>
 
-                        <p>Back-End Dev. Skills & Databases (PHP, MySql)</p>
-                        <div class="container">
-                            <div class="skills backEnd">40%</div>
-                        </div>
+                <div class="emailAdd">
+                    <img src="photos/mail.png" alt="Email Address">
+                    <p>suciucatalin_13@yahoo.com</p>
+                </div>
 
-                        <p>PHP Framework (Laravel)</p>
-                        <div class="container">
-                            <div class="skills phpFramework">40%</div>
-                        </div>
-
-                        <p>CMS(Wordpress)</p>
-                        <div class="container">
-                            <div class="skills CMS">60%</div>
-                        </div>
-
-                        <p>Web Design in Figma</p>
-                        <div class="container">
-                            <div class="skills webDesign">50%</div>
-                        </div>
-                    </div>
-                </a>
-
-                <a id="anchor_point_contactMe">
-                    <div class="contactMe">
-                        <h2>Contact Me</h2>
-                        <p>Phone number: <span id="phoneNumber">+40733524819</span></p>
-                        <p>E-mail address: <span id="emailAddress">suciucatalin_13@yahoo.com</span></p>
-                    </div>
-                </a>
-
-                <a id="anchor_point_myWork">
-                    <div class="myWork">
-                        <h2>My Work</h2>
-                        <p id="firstProjectTitle">My first Project</p>
-                        <p id="firstProjectDescription">This project was made by using HTML5, CSS3, a bit of Jquery and most important, PHP.
-                            For PHP, I used OOP principles in order to work with different product types.
-                            The project presents products listing with 'add products' and 'delete products' features.
-                        </p>
-                        <p class="projectPar">You can see my project here: <br> <span><a id="seeProject" href="https://web-junior-test.000webhostapp.com/">https://web-junior-test.000webhostapp.com/</a></span></p>
-                        <p class="projectPar">Also, you can see this project's code here: <span><a id="seeCode" href="https://bitbucket.org/cata13/webtest/src/master/">https://bitbucket.org/cata13/webtest/src/master/</a></span></p>
-                    </div>
-                </a>
-        </div>
-
-        <button onclick="goToTop()" id="goToTopBtn">Go to the Top</button>
+                <div class="linkedIn">
+                    <img src="photos/linkedin.png" alt="linkedIn Address">
+                    <a href="https://www.linkedin.com/in/catalin-suciu-66abb4220/">My profile</a>
+                </div>
+            </div>
+        </a>
 
     </div>
+
+    <button onclick="goToTop()" id="goToTopBtn">Go to the Top</button>
 
     <script>
         
